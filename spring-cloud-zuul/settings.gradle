@@ -1,0 +1,6 @@
+rootProject.name = 'org.young.cloud'
+include 'spring-cloud-zuul-realize'
+include 'spring-cloud-producer'
+include 'spring-cloud-producer-sec'
+include 'spring-cloud-eureka'
+

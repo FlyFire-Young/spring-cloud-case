@@ -1,0 +1,47 @@
+group 'org.young.cloud'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext {
+//        springBootVersion = '2.0.1.RELEASE'
+        springBootVersion = '1.5.13.RELEASE'
+    }
+    repositories {
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.6.RELEASE"
+    }
+}
+
+allprojects {
+    apply plugin: "java"
+    apply plugin: 'idea'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'application'
+    apply plugin: "io.spring.dependency-management"
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+    }
+
+    ext {
+//        springCloudVersion = "Finchley.SR1"
+        springCloudVersion = "Edgware.SR4"
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+        }
+    }
+
+    dependencies {
+        compile 'org.springframework.cloud:spring-cloud-starter-eureka'
+        compile 'org.springframework.boot:spring-boot-starter-test'
+    }
+}
