@@ -1,0 +1,24 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: zuul
+  zipkin:
+    base-url: http://localhost:9000
+  sleuth:
+    enabled: true
+    sampler:
+      percentage: 1
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+ribbon:
+  MaxAutoRetries: 2
+  MaxAutoRetriesNextServer: 0
+zuul:
+  retryable: true
+  routes:
+    producer:
+      path: /y/**
+      serviceid: producer

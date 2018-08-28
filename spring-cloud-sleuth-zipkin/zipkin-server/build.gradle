@@ -1,0 +1,19 @@
+group 'org.young.sleuth'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext {
+        springBootVersion = '1.5.13.RELEASE'
+    }
+    repositories {
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+    }
+}
+
+dependencies {
+    compile 'io.zipkin.java:zipkin-server'
+    compile 'io.zipkin.java:zipkin-autoconfigure-ui'
+}
