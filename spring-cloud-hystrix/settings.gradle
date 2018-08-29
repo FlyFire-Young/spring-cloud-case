@@ -1,0 +1,6 @@
+rootProject.name = 'org.young.cloud'
+include 'spring-cloud-consumer-hystrix'
+include 'spring-cloud-eureka'
+include 'spring-cloud-producer'
+include 'spring-cloud-producer-sec'
+

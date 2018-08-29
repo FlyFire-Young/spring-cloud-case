@@ -1,0 +1,5 @@
+rootProject.name = 'org.young.eureka'
+include 'spring-cloud-eureka-fir'
+include 'spring-cloud-eureka-sec'
+include 'spring-cloud-eureka-thr'
+

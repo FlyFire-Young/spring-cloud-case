@@ -1,0 +1,5 @@
+rootProject.name = 'org.young.consul'
+include 'spring-cloud-consul-producer'
+include 'spring-cloud-consul-producer-sec'
+include 'spring-cloud-consul-consumer'
+
