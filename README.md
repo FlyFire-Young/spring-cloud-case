@@ -1,5 +1,5 @@
 # spring-cloud-case
-spring-cloud + gradle(v4.8)
+spring cloud(Edgware.SR4) + gradle(v4.8)
 
 [Spring Cloud 中文索引](https://github.com/FlyFire-Young/spring-cloud-case)
 
