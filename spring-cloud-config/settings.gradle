@@ -1,0 +1,5 @@
+rootProject.name = 'org.young.config'
+include 'spring-cloud-config-server'
+include 'spring-cloud-config-client'
+include 'spring-cloud-config-client-refresh'
+

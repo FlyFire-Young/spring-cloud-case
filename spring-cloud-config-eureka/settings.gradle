@@ -1,0 +1,8 @@
+rootProject.name = 'org.young.config.eureka'
+include 'spring-cloud-eureka-service'
+include 'spring-cloud-config-server'
+include 'spring-cloud-eureka-provider-fir'
+include 'spring-cloud-eureka-provider-sec'
+include 'spring-cloud-eureka-provider-thr'
+include 'spring-cloud-feign-consumer'
+
