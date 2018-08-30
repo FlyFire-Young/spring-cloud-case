@@ -3,7 +3,7 @@ spring cloud(Edgware.SR4) + gradle(v4.8)
 
 [Spring Cloud 中文索引](https://github.com/FlyFire-Young/spring-cloud-case)
 
-注：可将个项目单独导入开发工具测试。例如：spring-cloud-zuul可将该项目直接导入开发工具，之后分别直接运行gradle子项目即可测试
+注：可将项目单独导入开发工具测试。例如：spring-cloud-zuul可将[spring-cloud-zuul]https://github.com/FlyFire-Young/spring-cloud-case/tree/master/spring-cloud-zuul)直接导入开发工具，之后分别直接运行gradle子项目即可测试
 
 Spring Cloud使用的各种示例，以最简单、最实用为标准
 
