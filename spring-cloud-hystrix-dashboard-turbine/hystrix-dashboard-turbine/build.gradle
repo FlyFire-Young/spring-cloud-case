@@ -1,0 +1,21 @@
+group 'org.young.monitor'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext {
+        springBootVersion = '1.5.13.RELEASE'
+    }
+    repositories {
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+    }
+}
+
+dependencies {
+    compile 'org.springframework.cloud:spring-cloud-starter-turbine'
+    compile 'org.springframework.cloud:spring-cloud-netflix-turbine'
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
+    compile 'org.springframework.cloud:spring-cloud-starter-hystrix-dashboard'
+}

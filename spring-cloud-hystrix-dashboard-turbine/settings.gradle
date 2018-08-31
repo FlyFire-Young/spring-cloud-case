@@ -1,0 +1,9 @@
+rootProject.name = 'org.young.monitor'
+include 'spring-cloud-eureka-service'
+include 'spring-cloud-eureka-provider-fir'
+include 'spring-cloud-eureka-provider-sec'
+include 'spring-cloud-feign-consumer-hystrix'
+include 'spring-cloud-ribbon-consumer-hystrix-dashboard'
+include 'spring-cloud-ribbon-consumer-hystrix'
+include 'hystrix-dashboard-turbine'
+
